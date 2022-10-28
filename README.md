@@ -1,8 +1,6 @@
 # Portfolio AMMAR Adam
 
-Voici premier **Portfolio** 👨‍💻
-
-Vous pourrez y retrouver mes **projets/réalisations**, une page **"About me"** et me **contacter** pour de futur projets !
+In this Portfolio, you can find my **projects/achievements**, a **"About me"** page and **Contact me** for future projects! 👨‍💻
 
 
 ### Authors
@@ -34,5 +32,4 @@ Install dependencies
 
 # How I work
 
-Les déploiements ont été réalisé avec Vercel. Des plug-in trouvé sur le Workplace de Github ont été utilisé. 
-Les plug-in utilisés sont **Imgbot** et **CodeFactor** pour noté et clarifié le code.
+Deployments were made with Vercel. Plugins found on the Github Workplace were used. The plugins used are **Imgbot** and **CodeFactor** for noting and clarifying the code.
