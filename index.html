@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio Adam</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/css/style.css">
+  </head>
+  <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        h1, h3{
-            color: blue;
-            font-size: 1.5em;
-            text-align: center;
-        }
-        h3{
-            color: blueviolet;
-        }
-        img{
-            width: 200px;
-        }
-    </style>
-</head>
-<body>
-    <h1>portfolio is commming</h1> 
-    <h3>AMMAR Adam</h3>
-    <p>test 2</p>
-    <img src="img/IMG_5754.jpeg" alt="">
-</body>
+    <div class="load-container">
 
+      <div class="anim-bloc">
+        <div class="images-container">
+            <div class="img-flip flip-img1"></div>
+            <div class="flip f2"></div>
+        </div>
+
+        <div class="bloc-txt">
+          <h2>Adam</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="home">
+        <div class="overlay"></div>
+        <video  muted>
+          <source src="ressources/highendcooking.mp4" type="video/mp4" />
+        </video>
+        <div class="home-content">
+          <h1>PORTFOLIO ADAM.</h1>
+          <div class="middle-line"></div>
+          <a href="am.html">EXPLORER</a>
+        </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,92 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    .logo{ 
+      color: #000;
+      font-size: 20px;
+      text-transform: uppercase; /* MAJUSCULE */
+      text-decoration: none;
+      font-weight: 300;
+      letter-spacing: 2px;
+      img{
+          width: 25px;
+          display: none;
+        }
+      }
+      // Reponsive pour faire disparaître le logo
+
+      @media screen and (max-width:570px) {
+        .logo{
+          display: none;
+        }
+        ul{
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+      // 
+      ul{
+        position: relative;
+        display: flex;
+        li {
+            position: relative;
+            list-style: none;
+            margin-right: 30px;
+            a{
+                font-weight: 100;
+                font-size: 14px;
+                position: relative;
+                display: inline-block;
+                margin: 0 15px;
+                color: #000;
+                text-decoration: none;
+                &:hover{
+                    color:black;
+                  }
+              }
+          }
+      }
+  }
+
+  header.sticky{
+    background-color: #000;
+    padding: 20px 100px;
+    .logo{
+          color: #000;
+      }
+    ul li a{
+        color: #000;
+    }
+  }  
+
+  // repsonsive 
+  @media screen and (max-width:570px){
+    header {
+      margin: 30px auto;
+      padding: 0;
+      ul {
+        li{
+          margin-right: 15px;
+          a{
+            font-size: 1.2rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:770px){
+    .logo{
+      margin-right: 40px;
+    }
+  }
+  // 
