@@ -1,0 +1,66 @@
+.work{
+    height: 100vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    a{
+        color: #000;
+        font-weight: 200;
+        font-size: 2em;
+        &:hover{
+            transition: 0.5s;
+            color: #fff;
+        }
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0.5px;
+          background: #FFF;
+          transition: width .3s;
+      } 
+          &:hover::after {
+            width: 100%;
+            transition: width .3s;
+        }
+    }
+    .hover-title {
+        display: inline;
+        pointer-events: auto;
+        cursor: pointer;
+        font-size: 24px;
+    }
+      .hover-image {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        pointer-events: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Change width and height to scale images */
+        width: 95vw;
+        height: 95vh;
+        img {
+            max-width: 100% !important;
+            max-height: 100% !important;
+            width: auto !important;
+            height: auto !important;
+            margin-bottom: 0;
+            opacity: 0.8;
+            filter: blur(4px);
+          }
+      }
+}
+
+  body:not(.mobile) .hover-title:hover + .hover-image {
+    display: flex;
+    pointer-events: none;
+  }

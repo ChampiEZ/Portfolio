@@ -119,6 +119,7 @@ video {
   position: absolute;
   top: 0;
   left: 0;
+  filter: brightness(0.3);
 }
 
 .home-content {
@@ -206,7 +207,7 @@ header ul {
 header ul li {
   position: relative;
   list-style: none;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 header ul li a {
   font-weight: 100;
@@ -217,8 +218,17 @@ header ul li a {
   color: #000;
   text-decoration: none;
 }
-header ul li a:hover {
-  color: black;
+header ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.5px;
+  background: #000;
+  transition: width 0.3s;
+}
+header ul li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 header.sticky {
@@ -249,6 +259,71 @@ header.sticky ul li a {
   .logo {
     margin-right: 40px;
   }
+}
+.work {
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.work a {
+  color: #000;
+  font-weight: 200;
+  font-size: 2em;
+}
+.work a:hover {
+  transition: 0.5s;
+  color: #fff;
+}
+.work a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.5px;
+  background: #FFF;
+  transition: width 0.3s;
+}
+.work a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.work .hover-title {
+  display: inline;
+  pointer-events: auto;
+  cursor: pointer;
+  font-size: 24px;
+}
+.work .hover-image {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Change width and height to scale images */
+  width: 95vw;
+  height: 95vh;
+}
+.work .hover-image img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin-bottom: 0;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+
+body:not(.mobile) .hover-title:hover + .hover-image {
+  display: flex;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
