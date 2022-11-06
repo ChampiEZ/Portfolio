@@ -12,8 +12,9 @@
         <link rel="stylesheet" href="scss/css/style.css">
     </head>
 
-<body>
-    <header class="main_header" id="header">
+<body class="contactB">
+    
+    <header class="main_header" id="header" class="header">
         <a href="index.html" class="logo">HOME</a>
         <div class="toggle"></div>
         <ul>
@@ -23,29 +24,60 @@
         </ul>
       </header>
 
-      <div class="containerContact">
-        <div class="contactInfo">
-            <div>
-                <h2>Contact Info</h2>
-                <ul class="info">
-                    <li>
-                        <span><img src="https://picsum.photos/id/684/600/400" alt=""></span>
-                        <span>Paris <br>
-                                FRANCE, FR, <br>
-                                75009</span>
-                    </li>
-                    <li>
-                        <span><img src="https://picsum.photos/id/237/600/400" alt=""></span>
-                        <span>adam.ammar&edu.devinci.fr</span>
-                    </li>
-                </ul>
+    
+    
+    
+      <section class="contact">
+        <div class="content">
+            <h2>CONTACT</h2>
+            <hr>
+            <p class="contact-desc"><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </span></p>
+        </div>
+        <div class="container3">
+            <div class="contactInfo">
+                <div class="box">
+                    <img src="https://zupimages.net/up/22/16/7ee4.png">
+                    <div class="text">
+                        <h4>Adresse</h4>
+                        <p>Rue de Rivoli, 75001 Paris</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://zupimages.net/up/22/16/pe9e.png"></i>
+                    <div class="text">
+                        <h4>Téléphone</h4>
+                        <p>06 12 13 14 15</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://zupimages.net/up/22/16/sl92.png">
+                    <div class="text">
+                        <h4>Email</h4>
+                        <p>museedulouvre@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form method="post" action="wp_mail()">
+                    <h2>Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Nom Prénom</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" name="message"></textarea>
+                        <span>Votre Message...</span>
+                    </div>
+                    <div class="inputBox">
+                    <input type="submit" name="" value="Send" style="font-size:25px">
+                    </div>
+                </form>
             </div>
         </div>
-      </div>
-
-
-
-
-
+	</section>
 </body>
 </html>
