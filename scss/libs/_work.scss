@@ -33,6 +33,8 @@
         pointer-events: auto;
         cursor: pointer;
         font-size: 24px;
+        letter-spacing: 2px;
+        font-weight: 400;
     }
       .hover-image {
         display: none;
@@ -46,8 +48,8 @@
         align-items: center;
         justify-content: center;
         /* Change width and height to scale images */
-        width: 95vw;
-        height: 95vh;
+        width: 50vw;
+        height: 50vh;
         img {
             max-width: 100% !important;
             max-height: 100% !important;
@@ -59,8 +61,41 @@
           }
       }
 }
+.works{
+  position: relative;
+  min-height: 90vh;
+  padding: 75px 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  .content{
+    max-width: 800px;
+    text-align: center;
+    h2{
+        font-size: 40px;
+        font-weight: 100;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    p{
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+  }
+}
+
 
   body:not(.mobile) .hover-title:hover + .hover-image {
     display: flex;
     pointer-events: none;
+  }
+
+  @media screen  and (max-width : 540px){
+    .hover-image{
+      width: 95vw;
+      height: 95vh;
+    }
   }

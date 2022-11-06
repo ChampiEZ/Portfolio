@@ -81,7 +81,7 @@ body {
 }
 
 .flip-img1 {
-  background-image: url("https://picsum.photos/id/514/600/400");
+  background-image: url("");
 }
 
 .flip {
@@ -299,6 +299,8 @@ header.sticky ul li a {
   pointer-events: auto;
   cursor: pointer;
   font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 .work .hover-image {
   display: none;
@@ -312,8 +314,8 @@ header.sticky ul li a {
   align-items: center;
   justify-content: center;
   /* Change width and height to scale images */
-  width: 95vw;
-  height: 95vh;
+  width: 50vw;
+  height: 50vh;
 }
 .work .hover-image img {
   max-width: 100% !important;
@@ -325,11 +327,43 @@ header.sticky ul li a {
   filter: blur(4px);
 }
 
+.works {
+  position: relative;
+  min-height: 90vh;
+  padding: 75px 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+.works .content {
+  max-width: 800px;
+  text-align: center;
+}
+.works .content h2 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.works .content p {
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
 body:not(.mobile) .hover-title:hover + .hover-image {
   display: flex;
   pointer-events: none;
 }
 
+@media screen and (max-width: 540px) {
+  .hover-image {
+    width: 95vw;
+    height: 95vh;
+  }
+}
 .contactB {
   background-color: #000;
   overflow-y: hidden;

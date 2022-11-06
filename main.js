@@ -11,7 +11,7 @@ function loader(){
 
     .to('.f2', {y: 0, duration: 0.6, ease: 'power2.out'})
     .add(() => {
-        document.querySelector('.flip-img1').style.backgroundImage = "url('ressources/image1.jpg')";
+        document.querySelector('.flip-img1').style.backgroundImage = "url('ressources/iim.webp')";
     })
     .to('.f2', {y: '-100%'})
 
